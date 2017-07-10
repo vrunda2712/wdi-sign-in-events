@@ -17,5 +17,13 @@ document.addEventListener('DOMContentLoaded', function(event) {
     for(var i = 0;i < input.length; i++) {
       input[i].className = 'error';
     }
-  })
+  });
+
+  for(var i = 0;i < input.length; i++) {
+    input[i].addEventListener('click',function(){
+      if(this.className = 'error') {
+        this.style.outline = 'none';
+      }
+    });
+  }
 });
